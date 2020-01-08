@@ -223,7 +223,7 @@
             ],
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#6e7066"
+                "foreground": "#5c6370"
             }
         },
         {
@@ -234,7 +234,7 @@
                 "variable.name"
             ],
             "settings": {
-                "foreground": "#93a1a1"
+                "foreground": "#abb2bf"
             }
         },
         {
@@ -243,7 +243,8 @@
                 "variable.parameter"
             ],
             "settings": {
-                "foreground": "#fdfff0"
+				"foreground": "#bbbbbb",
+				"fontStyle":"underline"
             }
         },
         {
@@ -432,7 +433,7 @@
                 "support.class"
             ],
             "settings": {
-                "foreground": "#fc941e",
+				"foreground": "#a5e12d",
                 "fontStyle":""
             }
         },
@@ -446,7 +447,8 @@
             ],
             "settings": {
                 "fontStyle": "",
-                "foreground": "#a5e12d"
+				"foreground": "#c7db74"
+
             }
         },
         {
