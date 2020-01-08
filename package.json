@@ -1,0 +1,57 @@
+{
+	"name": "my-monokai",
+	"displayName": "My Monokai Theme",
+	"description": "A set of 32 beautiful color themes for VSCode, inspired by Monokai classic.",
+	"version": "1.0.0",
+	"publisher": "vicobill",
+	"icon": "bui-icon.png",
+	"repository": {
+		"url": "https://github.com/swashata/my-monokai",
+		"type": "git"
+	},
+	"engines": {
+		"vscode": "^1.22.0",
+		"node": ">=8.6.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"Dark Theme",
+		"Monokai"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "My Monokai",
+				"uiTheme": "vs-dark",
+				"path": "./themes/my-monokai-theme.json"
+			}
+		]
+	},
+	"license": "MIT",
+	"author": "Vico Bill<vicobill@hotmail.com>",
+	"devDependencies": {
+		"chalk": "^2.4.1",
+		"chokidar-cli": "^1.2.0",
+		"color": "^3.0.0",
+		"eslint": "^4.19.1",
+		"eslint-config-airbnb-base": "^12.1.0",
+		"eslint-config-prettier": "^2.9.0",
+		"eslint-plugin-import": "^2.11.0",
+		"eslint-plugin-prettier": "^2.6.0",
+		"jest": "^22.4.3",
+		"lodash": "^4.17.10",
+		"ora": "^2.1.0",
+		"prettier": "^1.12.1",
+		"vsce": "^1.40.0"
+	},
+	"scripts": {
+		"test": "jest --color",
+		"build": "node ./script/generateTheme.js",
+		"start": "yarn build && chokidar 'src/**' 'script/**' -c 'yarn build'",
+		"vscode:prepublish": "yarn build",
+		"vsce": "vsce publish"
+	},
+	"private": false
+}
